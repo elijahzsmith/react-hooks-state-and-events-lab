@@ -10,12 +10,13 @@ function App() {
   }
   
   const appClass = isOn ? "App dark" : "App light"
+  const textContent = isOn ? "Light Mode" : "Dark Mode"
 
   return (
     <div className={appClass}>
       <header>
         <h2>Shopster</h2>
-        <button onClick={handleDarkMode}>Dark Mode</button>
+        <button onClick={handleDarkMode}>{textContent}</button>
       </header>
       <ShoppingList items={itemData} />
     </div>
